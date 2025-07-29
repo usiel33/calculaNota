@@ -1,5 +1,5 @@
 body{
-    background-image: url("unsa.jpg");
+    background-image: url("campus.jpg");
     background-size: cover;
     background-repeat: no-repeat;
      margin: 0;
@@ -93,6 +93,9 @@ label {
     width: 50%;
     border-radius: 1rem;
     text-align: center;
+}
+.total{
+    color:rgb(255, 255, 255);
 }
 .campo-nota {
     display: flex;
