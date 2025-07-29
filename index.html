@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula tus notas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1 class="titulo">Calcula tus Notas</h1>
+
+        <!-- Selector de unidad -->
+        <div class="form-unidad">
+            <label for="unidad">Unidad:</label>
+            <input list="unidades" id="unidad" name="unidad" class="input-text">
+            <datalist id="unidades">
+                <option value="Primera Unidad">
+                <option value="Segunda Unidad">
+                <option value="Tercera Unidad">
+            </datalist>
+        </div>
+
+        <!-- Entrada de notas y porcentajes -->
+        <div class="form-grupo">
+            <div class="campo-nota">
+                <label for="NotaContinua">Nota Continua:</label>
+                <input type="number" id="NotaContinua" class="input-numero" placeholder="Nota continua">
+                <input type="number" id="PorcentajeContinua" class="input-porcentaje" placeholder="%">
+            </div>
+
+            <div class="campo-nota">
+                <label for="NotaExamen">Nota Examen:</label>
+                <input type="number" id="NotaExamen" class="input-numero" placeholder="Nota examen">
+                <input type="number" id="PorcentajeExamen" class="input-porcentaje" placeholder="%">
+            </div>
+        </div>
+
+        <!-- Botón -->
+        <div class="acciones">
+            <button class="btn-calcular">Sumar Nota</button>
+        </div>
+
+        <!-- Resultados -->
+        <div class="tabla-resultados">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Primera Unidad</th>
+                        <th>Segunda Unidad</th>
+                        <th>Tercera Unidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="resultado primera"></td>
+                        <td class="resultado segunda"></td>
+                        <td class="resultado tercera"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="total"></div>
+        </div>
+    </div>
+
+    <!-- Corregido el uso de script -->
+    <script src="script.js"></script>
+</body>
+
+</html>

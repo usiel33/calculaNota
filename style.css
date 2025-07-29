@@ -1,0 +1,110 @@
+body{
+    background-image: url("unsa.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+     margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.contenedor { 
+    backdrop-filter: blur(10px);
+    max-width: 600px;
+    margin: auto;
+    padding: 80px;
+    border-radius: 12px;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+.form-unidad{
+margin-bottom: 20px;
+}
+.form-grupo {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.input-text, .input-numero {
+    padding: 10px;
+    border: 2px solid #0d8882;
+    border-radius: 50px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.btn-calcular {
+    width: 50%;
+    padding: 12px;
+    background-color: #00000062;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-calcular:hover {
+    background-color: #000000;
+}
+
+.tabla-resultados table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    
+}
+
+.tabla-resultados th,
+.tabla-resultados td {
+    border: 1px solid #44444477;
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.tabla-resultados th {
+    background-color: #0000009c;
+    color: #ffffff;
+}
+.tabla-resultados{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.total{
+   
+    margin-top: 30px;
+    background-color: #00000031;
+    height: 5rem;
+    width: 50%;
+    border-radius: 1rem;
+    text-align: center;
+}
+.campo-nota {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-porcentaje {
+    width: 80px;
+    padding: 10px;
+    border: 2px solid #0d8882;
+    border-radius: 50px;
+    font-size: 16px;
+}
