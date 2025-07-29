@@ -1,18 +1,22 @@
-body{
+
+body {
     background-image: url("campus.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-     margin: 0;
+    margin: 0;
     padding: 20px;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
-.contenedor { 
+.contenedor {
     backdrop-filter: blur(10px);
     max-width: 600px;
     margin: auto;
-    padding: 80px;
+    padding: 40px;
     border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .titulo {
@@ -21,9 +25,11 @@ body{
     font-weight: bold;
     color: #000000;
 }
-.form-unidad{
-margin-bottom: 20px;
+
+.form-unidad {
+    margin-bottom: 20px;
 }
+
 .form-grupo {
     margin-bottom: 20px;
     display: flex;
@@ -36,16 +42,37 @@ label {
     font-weight: bold;
 }
 
-.input-text, .input-numero {
+.input-text,
+.input-numero,
+.input-porcentaje {
     padding: 10px;
     border: 2px solid #0d8882;
     border-radius: 50px;
     font-size: 16px;
     margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.campo-nota {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-numero {
+    flex: 2;
+    min-width: 100px;
+}
+
+.input-porcentaje {
+    flex: 1;
+    min-width: 80px;
 }
 
 .btn-calcular {
-    width: 50%;
+    width: 100%;
     padding: 12px;
     background-color: #00000062;
     border: none;
@@ -60,11 +87,19 @@ label {
     background-color: #000000;
 }
 
+.tabla-resultados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+}
+
 .tabla-resultados table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    
+    min-width: 300px;
 }
 
 .tabla-resultados th,
@@ -79,35 +114,50 @@ label {
     background-color: #0000009c;
     color: #ffffff;
 }
-.tabla-resultados{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-}
-.total{
-   
+
+.total {
     margin-top: 30px;
     background-color: #00000031;
     height: 5rem;
-    width: 50%;
+    width: 100%;
+    max-width: 400px;
     border-radius: 1rem;
     text-align: center;
-}
-.total{
-    color:rgb(255, 255, 255);
-}
-.campo-nota {
+    color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 15px;
+    justify-content: center;
 }
 
-.input-porcentaje {
-    width: 80px;
-    padding: 10px;
-    border: 2px solid #0d8882;
-    border-radius: 50px;
-    font-size: 16px;
+/* Responsive */
+@media (max-width: 768px) {
+    .contenedor {
+        padding: 20px;
+    }
+
+    .campo-nota {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .input-numero,
+    .input-porcentaje {
+        width: 100%;
+    }
+
+    .btn-calcular {
+        font-size: 14px;
+    }
+
+    .tabla-resultados th,
+    .tabla-resultados td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .total {
+        height: auto;
+        padding: 10px;
+        font-size: 16px;
+    }
 }

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcula tus notas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,15 +15,17 @@
         <h1 class="titulo">Calcula tus Notas</h1>
 
         <!-- Selector de unidad -->
+        <!-- Selector de unidad -->
         <div class="form-unidad">
             <label for="unidad">Unidad:</label>
-            <input list="unidades" id="unidad" name="unidad" class="input-text">
-            <datalist id="unidades">
-                <option value="Primera Unidad">
-                <option value="Segunda Unidad">
-                <option value="Tercera Unidad">
-            </datalist>
+            <select id="unidad" name="unidad" class="input-text">
+                <option value="">Seleccione una unidad</option>
+                <option value="Primera Unidad">Primera Unidad</option>
+                <option value="Segunda Unidad">Segunda Unidad</option>
+                <option value="Tercera Unidad">Tercera Unidad</option>
+            </select>
         </div>
+
 
         <!-- Entrada de notas y porcentajes -->
         <div class="form-grupo">
